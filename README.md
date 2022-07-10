@@ -4,7 +4,7 @@ The Tools Used are PostgreSQL, Python, PGAdmin4, and Juptyer Notebooks respectiv
 
 ## First: Review Existing Unstructured Data and Diagram a New Structured Relational Data Model
 
-For full reference I have never heard of anything called a "joinable key" and any attempts to research it would leave me with the more well-known "primary key" and "foreign key". For the sake of my answers, I assumed that they were equivalent. Another interesting note was the introduction of a data scheme at the bottom of the assignment link. It didn't match the structure of the unstructured data, so I assumed that it's what we wanted the **end result** of the exercise to look like.
+For full reference I have never heard of anything called a "joinable key" and any attempts to research it would leave me with the more well-known "primary key" and "foreign key". For the sake of my answers, I assumed that they were equivalent. Another interesting note was the introduction of a data scheme at the bottom of the assignment link. It didn't match the structure of the unstructured data, so I assumed that it's what we wanted the __**end result**__ of the exercise to look like.
 
 The User's Database would be self-explanatory. Every user is uniquely identifiable purely by the userID, thus that serves as the primary key for the table.
 
