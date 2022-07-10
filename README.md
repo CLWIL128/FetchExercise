@@ -23,3 +23,10 @@ The Relational Diagram is provided for viewing in the repository.
 ## Third: Evaluate Data Quality Issues in the Data Provided
 
 ## Fourth: Communicate with Stakeholders
+
+Good Morning, {Client}
+
+This is Christopher Wilson, from the data analyst team. I have started my preliminary investigation of the dataset that you've provided and decided to give it the eye-to-screen test before using any additional tools. I have a few questions that will help determine our most impactful trajectory forward for the company, please answer as best as you can.
+
+- Did we have any plans for the data while collecting it? 
+- When did data collection start and when did data collection stop?
