@@ -20,7 +20,15 @@ The Relational Diagram is provided for viewing in the repository.
 
 ## Second: Write a query that directly answers a predetermined question from a business stakeholder
 
+The query assumes that I've translated everything into the format detailed in my relational diagram.
+
+- When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
+- The Query: WITH Hold AS (SELECT rewardsReceiptStatus, AVG(totalSpent) as avg_totalSpent FROM reciepts WHERE status = 'ACCEPTED' OR status = 'REJECTED' GROUP BY status ORDER BY avg_cost DESC) SELECT * from Hold LIMIT 1
+
+
 ## Third: Evaluate Data Quality Issues in the Data Provided
+
+I've provided a Jupyter notebook file with some notes on the datasets. I've also added an html file for viewing just in case it's not possible to use the Jupyter Notebook file. It assumes you have the dataset in the same directory as the notebook respectively.
 
 ## Fourth: Communicate with Stakeholders
 
@@ -30,3 +38,9 @@ This is Christopher Wilson, from the data analyst team. I have started my prelim
 
 - Did we have any plans for the data while collecting it? 
 - When did data collection start and when did data collection stop?
+- Is there a particular reason why employees are listed in the same space as consumers? Maybe some sort of implicit discount?
+
+After looking at the dataset, I ported everything over with python and discovered the use of dictionaries (or a collections of unrelated features) in some columns. Although it's great for programming, it could easily bog-down any data analytics insights we could make due to a stenuous depackaging process. To get the most optimal queries possible, it may be necessary for me to decouple those collections and make them have individual columns. It's a fairly simple process and can be done immediately.
+
+Thanks,
+Chris.
